@@ -1,0 +1,25 @@
+//弹出层变量
+//层带有标题与内容,同时附带左右两个按钮
+//背景颜色,宽,内容字体,标题字体,按键字体
+$layer-bcolor:#E1E1E1;
+$layer-width:80%;
+$layer-cfont:1.4rem;
+$layer-tfont:2rem;
+$layer-bfont:1.5rem;
+
+//弹出层标题行高,内容行高，背景遮罩设置
+$layer-tline:2.6rem;
+$layer-bline:3.8rem;
+$blur-bg:rgba(86, 86, 86, 0.88);
+$blur-z:1010;
+
+//购物车弹出层
+//弹出层的高度总是100%,占满整个屏幕
+//通过滑动关闭层,或是选择唯一的确定按钮
+//层的宽度,z-index,底部的高度
+$cart-layer-width:90%;
+$cart-layer-z:1020;
+$cart-layer-fh:4rem;
+$blur2-bg:rgba(153, 153, 153, 0.8);
+$blur2-z:1010;
+

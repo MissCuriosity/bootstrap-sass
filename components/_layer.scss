@@ -1,0 +1,53 @@
+@import "_require";
+@import "_var";
+.layer {
+	position:fixed;
+	width: $layer-width;
+	margin: 0 auto;
+	height: auto;
+	top: 20%;left: 9%;z-index: 1110;
+	background-color: $layer-bcolor;border-radius: 15px;}
+.layer-content{
+	@include fontc($layer-cfont,#000);
+	font-weight:400;
+	min-height: 10.5rem;
+	border-bottom: 1px solid #C8C8C8;
+	padding: 1rem 1.5rem;
+	text-align: center;
+	h2 {
+		display: block;
+		font-size: $layer-tfont;
+		line-height: $layer-tline;
+		letter-spacing: 0.15rem;
+		font-weight: 400;
+	}
+}
+.layer-btn {
+	@extend %auto;
+	overflow: hidden;
+	border-top: 1px solid #BBBBBB;
+	border-radius: 0 0 10px 10px;
+	letter-spacing: 0.1rem;
+	div {
+		@include fontc($layer-bfont,#0C7CFF);
+		line-height:$layer-bline; 
+		width: 50%;
+		height: auto;
+		float: left;
+		text-align: center;
+	}
+}
+.layer-btn2 {border-left: 1px solid #BBBBBB;}
+.layer-blur {
+	position: fixed;
+	top: 0;left: 0;right: 0;bottom: 0;
+	background: $blur-bg;
+	z-index: $blur-z;
+}
+
+
+
+
+
+
+

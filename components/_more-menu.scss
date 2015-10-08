@@ -1,0 +1,31 @@
+@import "_require";
+@import "_var";
+
+.more-menu{
+	@extend %maxmin;
+	height: auto;
+	position: fixed;
+	top: -4rem;
+	left: 0;
+	z-index: 2;
+	overflow: hidden;
+	@include transition(all 0.7s);
+	&.active{
+		top:4rem;
+	}
+	ul{
+		.show-list{
+			padding: 0;
+			background-color: rgb(86, 86, 90);
+			width:20%;
+			text-align:center;
+			i{
+				@include fontc(2rem,#D7D7D7);
+				display:block;
+			}
+			span{
+				@include fontc(0.93rem,#D7D7D7);
+			}
+		}
+	}
+}

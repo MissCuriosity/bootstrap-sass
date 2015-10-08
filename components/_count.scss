@@ -1,0 +1,25 @@
+.count-btn{
+	width:7.5rem;
+	height:auto;
+	background-color:#FFF;
+	border-radius:5px;
+	text-align:center;
+	@include fontc(1.125rem,#666,2.37rem);
+	button{
+		width:30.5%;
+		border:none;
+		line-height: 1.75rem;
+		background-color:#FFF;
+		&:focus{ outline:none;}
+	}
+	input{
+		width:36%;
+		text-align:center;
+		border:none;
+		border-left:1px solid #DCDCDC;
+		border-right:1px solid #DCDCDC;
+		&:focus{outline:none;}
+	}
+}
+.count-btn-add {border-radius: 5px 0 0 5px;padding: 0;}
+.count-btn-minus {border-radius: 0 5px 5px 0;padding: 0;}

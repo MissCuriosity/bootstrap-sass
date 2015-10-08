@@ -1,0 +1,148 @@
+@import "_var";
+@import "_require";
+
+.info-layer {
+	@include posi(fixed,0,-100%);
+	width:$cart-layer-width;
+	height:100%;
+	background-color: #F3F5F7;
+	z-index: $cart-layer-z;
+	height: 20px;
+	min-height: 100%;
+	overflow-y: auto;
+	padding-bottom: 5rem;
+	@include transition(all 0.8s);
+	&.active{
+		right:0;
+	}
+}
+.info-layer-content {
+	@extend %auto;
+	padding: 0.6rem 3%;
+	img {
+		width: 25%;
+		float: left;
+		margin-right:0.93rem;
+	}
+	h1 {
+		@include fontc(1.3rem,#424444,150%);
+		margin-top: 0.7rem;
+		font-weight: 400;
+	}
+	span {@include fontc(1.45rem,#41A18D);}
+	p{@include fontc(1rem,#636B6B);}
+}
+.info-layer-list {
+	margin-top: 0.9rem;
+	div {
+		@extend %adobe;
+		@extend %auto;
+		padding: 3%;
+		overflow: hidden;
+	}
+	h2 {
+		@include fontc(1.1rem,#707071,250%);
+		font-weight: 400;
+	}
+	a {
+		@include fontc(1.125rem,#666666);
+		width: auto;
+		text-align: center;
+		height: auto;
+		background-color: #FFF;
+		padding: 0.3rem 1rem;
+		display: block;
+		float: left;
+		margin-right: 0.625rem;
+		border-radius: 4px;
+		&.active{
+			color:#FFF;
+			background-color: #41A28E;
+		}
+	}
+}
+.info-layer-btn {
+	@extend %adobe;
+	width:30%;
+	height:44px;
+	background-color:#FFF;
+	border-radius:5px;
+	color:#666666;
+	text-align:center;
+	button {
+		@include fontc(1.125rem,#666);
+		width:30%;
+		height:100%;
+		border:none;
+		background-color:#FFF;
+		&:focus {outline:none;}
+	}
+	input {
+		width:40%;
+		font-size:1.125rem;
+		height:100%;
+		text-align:center;
+		border:none;
+		border-left:1px solid #DCDCDC; border-right:1px solid #DCDCDC;
+		&:focus {outline:none;}
+	}
+}
+.info-layer-btn-add {border-radius: 5px 0 0 5px;}
+.info-layer-btn-minus {border-radius: 0 5px 5px 0;}
+.info-layer-num {
+	@extend %auto;
+	overflow: hidden;
+	padding: 0 3%;
+	h2 {
+		@include fontc(1.25rem,#707071,250%);
+		font-weight: 400;
+	}
+}
+.info-layer-footer {
+	background-color: #DEDEDE;
+	height: $cart-layer-fh;
+	padding: 0.5rem 20%;
+	position: fixed;
+	right: -100%;
+	bottom: 0;
+	width: 100%;
+	z-index: 1030;
+	@include transition(all 0.8s);
+	&.active{
+		right: 0;
+	}
+	button {
+		@extend %full;
+		@include fontc(1.4rem,#41A18D，3rem);
+	}
+}
+.layer-blur2 {
+	@include posi(fixed,0,0,0,0);
+	background: $blur2-bg;
+	z-index:$blur2-z;
+	
+}
+.info-layer-close{
+	position: absolute;
+	bottom: 5rem;
+	right: 1rem;
+	@include fontc(1rem,#000);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
